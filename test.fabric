@@ -1,0 +1,54 @@
+[
+  {
+    "invoke": "emitirCertificado",
+    "args": [
+      "Juan Perez",
+      "12345678",
+      "Ingeniería de Sistemas",
+      "2023-05-10",
+      "Licenciatura",
+      "Ingeniero en Sistemas",
+      "Universidad Nacional"
+    ]
+  },
+  {
+    "invoke": "emitirCertificado",
+    "args": [
+      "María Lopez",
+      "87654321",
+      "Medicina",
+      "2022-12-20",
+      "Maestría",
+      "Doctora en Medicina",
+      "Universidad Médica"
+    ]
+  },
+  {
+    "query": "verificarCertificado",
+    "args": ["[ID del certificado de Juan Perez]"]
+  },
+  {
+    "query": "verificarCertificado",
+    "args": ["[ID del certificado de María Lopez]"]
+  },
+  {
+    "invoke": "revocarCertificado",
+    "args": ["[ID del certificado de Juan Perez]", "Solicitud de revisión"]
+  },
+  {
+    "query": "verificarCertificado",
+    "args": ["[ID del certificado de Juan Perez]"]
+  },
+  {
+    "invoke": "crearSolicitudVerificacion",
+    "args": [
+      "[ID del certificado de María Lopez]",
+      "Empresa Salud SA",
+      "2024-11-08"
+    ]
+  },
+  {
+    "query": "obtenerCertificadosPorEstudiante",
+    "args": ["12345678"]
+  }
+]
