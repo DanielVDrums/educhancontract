@@ -25,24 +25,24 @@
   },
   {
     "query": "verificarCertificado",
-    "args": ["[ID del certificado de Juan Perez]"]
+    "args": ["12345678"]
   },
   {
     "query": "verificarCertificado",
-    "args": ["[ID del certificado de María Lopez]"]
+    "args": ["87654321"]
   },
   {
     "invoke": "revocarCertificado",
-    "args": ["[ID del certificado de Juan Perez]", "Solicitud de revisión"]
+    "args": ["12345678", "Solicitud de revisión"]
   },
   {
     "query": "verificarCertificado",
-    "args": ["[ID del certificado de Juan Perez]"]
+    "args": ["12345678"]
   },
   {
     "invoke": "crearSolicitudVerificacion",
     "args": [
-      "[ID del certificado de María Lopez]",
+      "87654321",
       "Empresa Salud SA",
       "2024-11-08"
     ]
@@ -50,5 +50,9 @@
   {
     "query": "obtenerCertificadosPorEstudiante",
     "args": ["12345678"]
+  },
+  {
+    "query": "obtenerCertificadosPorEstudiante",
+    "args": ["87654321"]
   }
 ]
