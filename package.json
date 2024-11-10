@@ -12,6 +12,7 @@
   "dependencies": {
     "crypto": "^1.0.1",
     "fabric-contract-api": "^2.5.7",
-    "fabric-shim": "^2.5.7"
+    "fabric-shim": "^2.5.7",
+    "uuid": "^11.0.3"
   }
 }

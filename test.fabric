@@ -14,8 +14,32 @@
   {
     "invoke": "emitirCertificado",
     "args": [
+      "Juan Perez",
+      "12345678",
+      "Ingeniería de Sistemas",
+      "2023-05-10",
+      "Tecnicatura",
+      "Programación",
+      "Universidad Tecnológica Nacional"
+    ]
+  },
+  {
+    "invoke": "emitirCertificado",
+    "args": [
       "María Lopez",
       "87654321",
+      "Medicina",
+      "2022-12-20",
+      "Maestría",
+      "Doctora en Medicina",
+      "Universidad Médica"
+    ]
+  },
+  {
+    "invoke": "emitirCertificado",
+    "args": [
+      "José Lopez",
+      "23456789",
       "Medicina",
       "2022-12-20",
       "Maestría",
@@ -32,12 +56,20 @@
     "args": ["87654321"]
   },
   {
+    "query": "verificarCertificado",
+    "args": ["23456789"]
+  },
+  {
     "invoke": "revocarCertificado",
-    "args": ["12345678", "Solicitud de revisión"]
+    "args": ["<certificadoId_12345678>", "Solicitud de revisión"]
   },
   {
     "query": "verificarCertificado",
-    "args": ["12345678"]
+    "args": ["<certificadoId_12345678>"]
+  },
+  {
+    "query": "verificarCertificado",
+    "args": ["23456789"]
   },
   {
     "invoke": "crearSolicitudVerificacion",
