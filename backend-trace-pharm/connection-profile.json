@@ -1,0 +1,53 @@
+
+{
+    "name": "fabric-network",
+    "version": "1.0.0",
+    "client": {
+        "organization": "Org1",
+        "connection": {
+            "timeout": {
+                "peer": {
+                    "endorser": "300"
+                },
+                "orderer": "300"
+            }
+        }
+    },
+    "channels": {
+        "default": {
+            "orderers": [
+                "orderer.debugger.com"
+            ],
+            "peers": {
+                "peer0.org1.debugger.com": {}
+            }
+        }
+    },
+    "organizations": {
+        "Org1": {
+            "mspid": "Org1MSP",
+            "peers": [
+                "peer0.org1.debugger.com"
+            ],
+            "certificateAuthorities": [
+                "ca.org1.debugger.com"
+            ]
+        }
+    },
+    "orderers": {
+        "orderer.debugger.com": {
+            "url": "grpc://127.0.0.1:5050"
+        }
+    },
+    "peers": {
+        "peer0.org1.debugger.com": {
+            "url": "grpc://127.0.0.1:5051"
+        }
+    },
+    "certificateAuthorities": {
+        "ca.org1.debugger.com": {
+            "url": "http://127.0.0.1:5054",
+            "caName": "ca-org1"
+        }
+    }
+}
