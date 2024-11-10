@@ -4,6 +4,18 @@
     "args": [
       "Juan Perez",
       "12345678",
+      "Ingeniería Electronica",
+      "2023-05-10",
+      "Maestria",
+      "Ingeniero Electronico",
+      "Universidad Nacional Cordoba"
+    ]
+  },
+  {
+    "invoke": "emitirCertificado",
+    "args": [
+      "Juan Perez",
+      "12345678",
       "Ingeniería de Sistemas",
       "2023-05-10",
       "Licenciatura",
@@ -16,11 +28,11 @@
     "args": [
       "María Lopez",
       "87654321",
-      "Medicina",
-      "2022-12-20",
-      "Maestría",
-      "Doctora en Medicina",
-      "Universidad Médica"
+      "Maestra Jardinera",
+      "2019-12-20",
+      "Titulo de Grado",
+      "Maestra Jardinera",
+      "Univeridad Provincial Cordoba"
     ]
   },
   {
@@ -41,11 +53,7 @@
   },
   {
     "invoke": "crearSolicitudVerificacion",
-    "args": [
-      "87654321",
-      "Empresa Salud SA",
-      "2024-11-08"
-    ]
+    "args": ["87654321", "Empresa Salud SA", "2024-11-08"]
   },
   {
     "query": "obtenerCertificadosPorEstudiante",
@@ -53,6 +61,6 @@
   },
   {
     "query": "obtenerCertificadosPorEstudiante",
-    "args": ["87654321"]
+    "args": ["12345678"]
   }
 ]
